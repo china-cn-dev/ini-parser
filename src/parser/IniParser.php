@@ -45,7 +45,14 @@ class IniParser
 
                 if(!strpos($line, '=')) {
 
-                    $ret[$inside_section][trim($line)] = "";
+                    if(strpos($line,"#")) {
+                         $_line = explode('#',$line);
+                         $ret[$inside_section][trim($_line[0])] = "";
+
+                    }else{
+                         $ret[$inside_section][trim($line)] = "";
+                    }
+                    
                 }else{
 
                     $tmp = explode("=", $line, 2);
