@@ -46,21 +46,22 @@ class IniParser
                 if(!strpos($line, '=')) {
 
                     $ret[$inside_section][trim($line)] = "";
-                }
-
-                $tmp = explode("=", $line, 2);
-                $key = rtrim($tmp[0]);
-                $value = ltrim($tmp[1]);
-
-                
-                if(strpos($value,"#")) {
-
-                     $_val = explode('#',$value);
-                     $ret[$inside_section][trim($tmp[0])] = trim($_val[0]);
-
                 }else{
 
-                     $ret[$inside_section][trim($tmp[0])] = trim($value);
+                    $tmp = explode("=", $line, 2);
+                    $key = rtrim($tmp[0]);
+                    $value = ltrim($tmp[1]);
+
+                
+                    if(strpos($value,"#")) {
+
+                       $_val = explode('#',$value);
+                       $ret[$inside_section][trim($tmp[0])] = trim($_val[0]);
+
+                    }else{
+
+                      $ret[$inside_section][trim($tmp[0])] = trim($value);
+                    }
                 }    
 
             }
