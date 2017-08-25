@@ -7,6 +7,12 @@
     "license": "Apache 2.0",
     "authors": [
         {
+            "name": "Li Liang",
+            "email": "liliang@mail.china.cn",
+            "homepage": "https://github.com/liyiliang",
+            "role": "Lead"
+        },
+        {
             "name": "Timandes White",
             "email": "timands@gmail.com",
             "homepage": "https://github.com/Timandes",
