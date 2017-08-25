@@ -1,0 +1,24 @@
+{
+    "name": "chinacn/ini-parser",
+    "type": "library",
+    "description": "PHP INI Parser Library",
+    "keywords": ["ini", "parser"],
+    "homepage": "http://github.com/china-cn-dev/ini-parser",
+    "license": "Apache 2.0",
+    "authors": [
+        {
+            "name": "Timandes White",
+            "email": "timands@gmail.com",
+            "homepage": "https://github.com/Timandes",
+            "role": "Lead"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "chinacn\\": "src\\"
+        }
+    }
+}
