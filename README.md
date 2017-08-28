@@ -47,7 +47,7 @@ large-pages                      # Enable large pages
 
 EOT;
 
-$parser = chinacn\parser\IniParser();
+$parser = new chinacn\parser\IniParser();
 
 $parser->parse($str);
 
