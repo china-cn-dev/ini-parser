@@ -4,7 +4,7 @@
     "description": "PHP INI Parser Library",
     "keywords": ["ini", "parser"],
     "homepage": "http://github.com/china-cn-dev/ini-parser",
-    "license": "Apache 2.0",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "Li Liang",
